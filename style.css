@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    color: #ccc;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.9)),
+        url('./pexels-kaique-rocha-65777.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    margin-right: 0;
+}
+
+.container {
+    width: 350px;
+    max-width: 100%;
+    background: #333;
+    padding: 20px;
+    box-shadow: 2px 2px 0 #ccc,
+                4px 4px 0 #333,
+                6px 6px 3px #ccc;
+    border-radius: 5px;
+    border: 2px solid #ccc
+}
+
+.container h2{ 
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.sub-container {
+    background-color: #ccc;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #333;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+
+.sub-container .result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.result {
+    font-weight: 600;
+}
+
+.container .sub-container .btn {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.container .btn {
+    border: none;
+    color: #ccc;
+    background: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+    width: 100%;
+}
+
+.setup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.setup input.length {
+    color: #ccc;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 4px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn.generate-btn {
+    border: 2px solid #ccc;
+}
+
+.btn.generate-btn:hover {
+    color: #eee;
+    border: 2px solid #eee;
+}
